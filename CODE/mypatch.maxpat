@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 18.0, 79.0, 775.0, 647.0 ],
+		"rect" : [ 34.0, 79.0, 775.0, 647.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,27 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "@file", "sho0630.aif", "@loop", 1, "@vol", -6 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-24",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "demosound.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ -4.0, -3.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 25.0, 10.0, 219.0, 89.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "slider",
@@ -430,7 +451,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-35",
@@ -439,7 +459,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
 									"patching_rect" : [ 718.0, 90.212883, 41.0, 22.0 ],
-									"presentation_rect" : [ 762.292664, 90.212883, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "* 0.01"
 								}
@@ -453,7 +472,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 294.107361, 466.0, 96.0, 22.0 ],
-									"presentation_rect" : [ 292.041809, 463.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "normalize~ 0.99"
 								}
@@ -494,7 +512,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 482.0, 162.0, 56.0, 22.0 ],
-									"presentation_rect" : [ 482.0, 162.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "*~ 0.001"
 								}
@@ -1284,45 +1301,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"data" : 					{
-						"clips" : [ 							{
-								"filename" : "Macintosh HD:/Users/Camilo/Desktop/Class/McGill/Winter 2018/MUMT 307/Final Project/vocal_test_2.mp3",
-								"filekind" : "audiofile",
-								"loop" : 1,
-								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"quality" : [ "basic" ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchcorrection" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"followglobaltempo" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
-									"formantcorrection" : [ 0 ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
- ]
-					}
-,
-					"id" : "obj-3",
-					"maxclass" : "playlist~",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 112.0, 95.0, 150.0, 30.0 ],
-					"style" : ""
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1431,6 +1409,31 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 2,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"midpoints" : [ 34.5, 135.0, 262.0, 135.0, 262.0, 24.0, 402.5, 24.0 ],
+					"order" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"midpoints" : [ 730.5, 451.0, 788.5, 451.0 ],
 					"order" : 1,
@@ -1457,31 +1460,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"order" : 2,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 121.5, 135.0, 262.0, 135.0, 262.0, 24.0, 402.5, 24.0 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -1531,17 +1509,45 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-24::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-24::obj-35" : [ "[5]", "Level", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
-				"name" : "vocal_test_2.mp3",
-				"bootpath" : "~/Desktop/Class/McGill/Winter 2018/MUMT 307/Final Project",
-				"patcherrelativepath" : "..",
-				"type" : "Mp3 ",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "gizmo_loadme.maxpat",
 				"bootpath" : "C74:/help/msp",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
 				"implicit" : 1
 			}
  ],
