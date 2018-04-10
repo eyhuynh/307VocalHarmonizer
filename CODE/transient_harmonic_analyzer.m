@@ -65,12 +65,15 @@ plot(t,vzc, 'r');
 title('Zero Crossing Rate of Signal');
 xlabel('Time in Seconds');
 ylabel('Zero Crosing Rate');
-
+%print('ZCR', '-djpeg')
 
 figure(2)
-plot(y);
+plot(y, 'b');
 hold on;
 plot(ynew, 'r');
+title('Original Signal vs. Padded High ZCR Regions')
+legend('Original Signal', 'High ZCR reduced', 'Threshold = 0.25');
+%print('ZCRSignal', '-djpeg');
 
 %% Spectral Flux of the Signal 
 
@@ -117,10 +120,10 @@ end
 
 figure(3);
 plot(t,flux, 'r');
-title('Spectral Flux of Signal');
+title('Short Time Spectral Energy');
 xlabel('Time in Seconds');
-ylabel('Flux');
-
+ylabel('Spectral Energy');
+%print('SpectralEnergy', '-djpeg');
 
 %% FFT Processing of the signal
 
