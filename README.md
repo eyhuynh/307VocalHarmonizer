@@ -1,3 +1,3 @@
 # MUMT 307 Vocal Harmonizer 
 
- ## Erica Huynh and Camilo Gómez
+ <h2> Erica Huynh and Camilo Gómez </h2>
