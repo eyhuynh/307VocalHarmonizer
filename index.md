@@ -3,11 +3,52 @@
 
 This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as final project for MUMT 307: Music and Audio Computing 2. Presented by Camilo Gómez and Erica Huynh a.k.a Huynez & Co.
 
-## Header 2
+## Introduction
+> discuss motivation and goals
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## The Interface
+> screenshot of the entire interface on Max/MSP
+> remember to comment the patch before uploading image
+
+## Pre-processing
+> Camilo's zero-crossing vs short-term energy detection
+> why do we have to do this?
+> include the citations of books and online resources
+> include code and graphs
+
+### Comparing VST Plugin to Max External
+> describe thought process in choices
+
+## Pitch-shifting
+> on Max/MSP
+> decided to have one upper and lower harmony and explain why
+> wanted it to be user friendly, so that anyone can use it without requiring music theory background
+
+### gizmo~: Pitch Shift
+> how it works, benefits, cons
+> include image
+
+### retune~: Pitch Detection
+> how it works, benefits, cons
+> how it enhances
+> explain how pitch shift calculations are made... user friendly
+> include images
+
+## Formant Analyses
+> god bless us
+> #Pray4Huynez2k18
+
+## Effects
+> cool stuff
+> general image of subpatch
+
+### Delay
+> explain parameters
+> tapin~ and tapout~
+
+### Feedback
+> how it was implemented
+-----------------------
 
 ### Header 3
 
