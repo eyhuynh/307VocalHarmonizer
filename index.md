@@ -48,7 +48,23 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 ### Feedback
 > how it was implemented
------------------------
+
+## Limitations and Outlook
+> what we would have done differently
+> limitations in general
+> is it usable to the public?
+
+## References
+Cycling ‘74. (2018). Max 7.3.5.
+
+Lerch, A. (2012). Instantaneous features. In <i>An Introduction to Audio Content Analysis: Applications in Signal Processing and Music Informatics</i> (31–70). Hoboken, New Jersey: John Wiley & Sons Inc.
+
+MathWorks. (2018). MATLAB.
+
+Steinberg Media Technologies GmbH. (2016). Audio Systems Toolbox  - A Matlab Toolbox.
+
+
+
 
 ### Header 3
 
