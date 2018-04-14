@@ -5,8 +5,8 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 ## Introduction
 > discuss motivation and goals:
-Goals: Make awesome shit.
-Motivation: At this point, none whatsoever.
+> Goals: Make awesome shit.
+> Motivation: At this point, none whatsoever.
 
 ## The Interface
 > screenshot of the entire interface on Max/MSP
