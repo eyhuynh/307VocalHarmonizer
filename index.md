@@ -16,7 +16,9 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 > remember to comment the patch before uploading image
 
 ## Pre-processing
-> Camilo's zero-crossing vs short-term energy detection
+
+
+>Camilo's zero-crossing vs short-term energy detection
 > 
 > why do we have to do this?
 > 
@@ -26,6 +28,19 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 ### Comparing VST Plugin to Max External
 > describe thought process and choices
+
+
+
+| Max/MSP Patcher/Abstraction      | Max External  | VST Plugin (Using MATLAB)   |
+|:----------------------|:------------------------|:-----------------------------|
+|Less flexibility for sample by sample processing| Sample by sample and frame by frame manipulation|Sample by sample and frame by frame manipulation|  
+|Fast prototyping and testing | Laborious to write, test and debug     | Faster prototyping, testing and debugging. audioTestBench included in MATLAB   |
+|No coding/compiling         | Max SDK needed          | MATLAB Audio System Toolbox includes generateAudioPlugin function              |
+
+
+
+
+
 
 ## Pitch-shifting
 > on Max/MSP
