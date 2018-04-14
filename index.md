@@ -1,4 +1,4 @@
-[This link is a test] (./test.html)
+[This link is a test](./test.html)
 
 
 # MUMT 307 Vocal Harmonizer
