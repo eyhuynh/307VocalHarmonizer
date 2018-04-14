@@ -19,7 +19,7 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 > include code and graphs
 
 ### Comparing VST Plugin to Max External
-> describe thought process in choices
+> describe thought process and choices
 
 ## Pitch-shifting
 > on Max/MSP
