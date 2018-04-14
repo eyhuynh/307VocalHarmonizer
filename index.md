@@ -5,17 +5,23 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 ## Introduction
 > discuss motivation and goals:
+> 
 > Goals: Make awesome shit.
+> 
 > Motivation: At this point, none whatsoever.
 
 ## The Interface
 > screenshot of the entire interface on Max/MSP
+> 
 > remember to comment the patch before uploading image
 
 ## Pre-processing
 > Camilo's zero-crossing vs short-term energy detection
+> 
 > why do we have to do this?
+> 
 > include the citations of books and online resources
+> 
 > include code and graphs
 
 ### Comparing VST Plugin to Max External
@@ -23,29 +29,38 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 ## Pitch-shifting
 > on Max/MSP
+> 
 > decided to have one upper and lower harmony and explain why
+> 
 > wanted it to be user friendly, so that anyone can use it without requiring music theory background
 
 ### gizmo~: Pitch Shift
 > how it works, benefits, cons
+> 
 > include image
 
 ### retune~: Pitch Detection
 > how it works, benefits, cons
+> 
 > how it enhances
+> 
 > explain how pitch shift calculations are made... user friendly
+> 
 > include images
 
 ## Formant Analyses
 > god bless us
+> 
 > #Pray4Huynez2k18
 
 ## Effects
 > cool stuff
+> 
 > general image of subpatch
 
 ### Delay
 > explain parameters
+> 
 > tapin~ and tapout~
 
 ### Feedback
@@ -54,7 +69,9 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 ## Limitations and Outlook
 > what we would have done differently
+> 
 > limitations in general
+> 
 > is it usable to the public?
 
 ## References
