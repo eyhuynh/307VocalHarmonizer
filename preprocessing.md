@@ -1,4 +1,4 @@
-[Previous](./interface.md)         [Next](./pitchshifting.md)
+[Previous](./interface.md)     
 
 ## Pre-processing
 
