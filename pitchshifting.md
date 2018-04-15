@@ -18,7 +18,7 @@ One issue with applying a constant ratio to `gizmo~` is that the pitch-shifting 
 ### Pitch Detection: `retune~`
 Fortunately, Max/MSP has a `retune~` object, which performs a pitch detection and a pitch-shift; however, we only used `retune~` for pitch detection. The signal was sent to `retune~` after preprocessing to detect the pitch in frequency (via the second outlet of `retune~`). By setting the quality attribute to ‘best’, `retune~` performs the highest quality of pitch detection and retuning calculations.
  
-![gizmo](./Images/gizmo.png)
+![retune](./Images/retune.png)
 
 ### Ratio Calculation
 We created the vocal harmonizer so that the ratio calculations would apply to any major or minor key signature the user desires. The user should select the pitch class and mode of the key before singing into the vocal harmonizer.
