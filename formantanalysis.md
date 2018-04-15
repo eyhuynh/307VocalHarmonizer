@@ -1,10 +1,11 @@
 [previous](./pitchshifting.md)
 
-## Formant Analysis
 
-godbless
-pray4us
-oh mon dieu
+## Formant Analysis
+> god bless us
+> 
+> #Pray4Huynez2k18
+
 
 
 [next](./effects.md)
