@@ -1,4 +1,4 @@
-[Previous: Index](./index.md)
+[Previous: Home](./index.md)
 
 
 ## Introduction
