@@ -1,3 +1,5 @@
+[Previous](./interface.md)         [Next](./pitchshifting.md)
+
 ## Pre-processing
 
 ### Why do we need to pre-process the signal?
