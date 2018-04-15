@@ -10,7 +10,7 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 1.  [Introduction](./introduction.md)
 1.  [The Interface](./interface.md)
 1.  [Pre-processing](./preprocessing.md)
-1.  [Pitch Shifting](./pitchshifting.md)
+1.  [Pitch-Shifting](./pitchshifting.md)
 1.  [Formant Analysis](./formantanalysis.md)
 1.  [Effects](./effects.md)
 1.  [Limitations and Outlook](./limitations)
