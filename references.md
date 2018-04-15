@@ -1,3 +1,5 @@
+[previous](./limitations.md)
+
 ## References
 
 Cycling ‘74. (2018). Max 7.3.5.
@@ -7,3 +9,6 @@ Lerch, A. (2012). Instantaneous features. In <i>An Introduction to Audio Content
 MathWorks. (2018). MATLAB.
 
 Steinberg Media Technologies GmbH. (2016). Audio Systems Toolbox  - A Matlab Toolbox.
+
+
+[Home](./index.md)
