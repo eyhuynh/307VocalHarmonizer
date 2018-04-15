@@ -61,10 +61,6 @@ The following graph shows the short term energy of the test file:
 |No coding/compiling         | Max SDK needed          | MATLAB Audio System Toolbox includes generateAudioPlugin function              |
 
 
-
-
-
-
 ## Pitch-shifting
 In order for harmonies to be heard, pitch shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. The pitch-shifting was implemented on Max/MSP primarily with the gizmo~ object, but also with the retune~ object. The goal of implementing the pitch shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
 
@@ -100,18 +96,12 @@ The detected pitch gets converted into a MIDI note using the ftom object. The us
 > #Pray4Huynez2k18
 
 ## Effects
-> cool stuff
-> 
+We wanted to implement digital delay lines to add effects to either the singer’s voice, the upper harmony, the lower harmony, or any combination of the voices. Our goal was to provide user-control of the delay and feedback (i.e., echo).
+
 > general image of subpatch
 
-### Delay
-> explain parameters
-> 
-> tapin~ and tapout~
-
-### Feedback
-> how it was implemented
-
+### Delay and Feedback: tapin~ and tapout~
+We used the tapin~ and tapout~ objects to create delay lines. The subpatch for this implementation was based on the ‘MSP Delay Tutorial 2’ from the Max/MSP documentation, with some modifications. The user can specify how long (in milliseconds) they want the delay to be, with a maximum of 2s. The user can also specify the wet to dry ratio, meaning the ratio of how loud the dry signal (non-delayed) is to the wet signal (delayed). The user can also control how much feedback, or echo, they want to hear. This was implemented by scaling and feeding the delayed signal back into the delay buffer. This ensured that the delayed signal would be quieter each time it was fed back into the delay line.
 
 ## Limitations and Outlook
 > what we would have done differently
