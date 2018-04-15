@@ -55,11 +55,7 @@ The function ```diff ``` returns the value of ```sign(input(n)) - sign(input(n-1
 
 
 ## Pitch-shifting
-> on Max/MSP
-> 
-> decided to have one upper and lower harmony and explain why
-> 
-> wanted it to be user friendly, so that anyone can use it without requiring music theory background
+In order for harmonies to be heard, pitch shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. The pitch-shifting was implemented on Max/MSP primarily with the gizmo~ object, but also with the retune~ object. The goal of implementing the pitch shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
 
 ### gizmo~: Pitch Shift
 > how it works, benefits, cons
