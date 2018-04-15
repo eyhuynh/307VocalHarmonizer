@@ -18,4 +18,4 @@ This vocal harmonizer was created using Max/MSP and MATLAB and was submitted as 
 
 
 
-[Next](./introduction.md)
+[Next: Introduction](./introduction.md)
