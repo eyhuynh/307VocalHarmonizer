@@ -30,4 +30,4 @@ The detected pitch gets converted into a MIDI note using the `ftom` object. The 
 > include image
 
 
-[Next: Effects](./effects.md)
+[Next: Formant Analysis](./formantanalysis.md)
