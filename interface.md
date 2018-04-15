@@ -1,4 +1,4 @@
-[previous](./introduction.md)
+[Previous: Introduction](./introduction.md)
 
 
 ## The Interface
@@ -9,4 +9,4 @@
 
 
 
-[next](./preprocessing.md)
+[Next: Pre-processing](./preprocessing.md)
