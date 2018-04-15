@@ -82,7 +82,17 @@ Fortunately, Max/MSP has a retune~ object, which performs a pitch detection and 
  
 > include image!!!
 
-### Calculating Ratios
+### Ratio Calculation
+We created the vocal harmonizer so that the ratio calculations would apply to any major or minor key signature the user desires. The user should select the pitch class and mode of the key before singing into the vocal harmonizer.
+
+> include image
+>
+
+We created a subpatch for the ratio calculations that need to be performed for the pitch-shifting to retain a scale’s tonality. The calculations differ depending on whether the harmony is either shifted up or down a third, so each harmonized voice has its own subpatch. The general mechanism is that the subpatch takes in three arguments: (1) the detected pitch from retune~, (2) the pitch class of the desired key, and (3) the mode of the desired key. All of the ratio calculations were calculated on the basis of C4, but should still apply to any key. The crucial idea is that we obtain the correct ratio, so it isn’t important what the reference note is.
+
+The detected pitch gets converted into a MIDI note using the ftom object. The user-selected pitch class will send an output that corresponds to the distance (in MIDI notes) from our reference note of C4 or 60. The user-selected mode will send a bang to one of two coll objects. The one on the left, corresponds to a major key, and the one on the right corresponds to a minor key. In the each coll object is the desired distance (in MIDI notes) of the pitch shift. These values get added to our reference note of C4 or 60, and then converted back to a frequency value using mtof. Finally, a ratio is calculated between the reference note and the desired pitch-shifted note. This ratio is, thus, the input of the gizmo~ object, and should change in real-time, depending on the key the user selects and the notes the user sings. 
+
+> include image
 
 ## Formant Analyses
 > god bless us
