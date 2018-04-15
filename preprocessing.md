@@ -108,5 +108,8 @@ And can then be mapped to the GUI sliders inside the constant ```properties``` u
         end        
 ```
 
+Finally, we can run the function ```audioTestBench``` with the name of our plugin as an argument to test our plugin, and ```generateAudioPlugin``` to generate the VST plugin that we can drag into our Max/MSP patch. 
 
+
+[Next](./pitchshifting.md)
 
