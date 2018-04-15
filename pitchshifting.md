@@ -29,10 +29,5 @@ The detected pitch gets converted into a MIDI note using the `ftom` object. The 
 
 > include image
 
-## Formant Analyses
-> god bless us
-> 
-> #Pray4Huynez2k18
-
 
 [Next](./effects.md)
