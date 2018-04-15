@@ -78,7 +78,8 @@ And can then be mapped to the GUI sliders inside the constant ```properties``` u
  
  The main processing of the plugin occurs in the following block of code. Here, the fade in and fade out are defined, the zero crossing rate of the current frame is calculated and the corresponding gain is applied to the frame. The zero crossing rate is then stored and used for comparison when the next frame is calculated.
  
- ```function out = process(plugin, in)    
+ ```
+ function out = process(plugin, in)    
             
             sIn = size(in);
             fadeOut = transpose( logspace( plugin.Gain, log10(plugin.unvoicedGain), length(in) ) );
