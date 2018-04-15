@@ -13,7 +13,7 @@ The `gizmo~` object on Max/MSP was mainly used for the pitch-shifting. We decide
 
 One issue with applying a constant ratio to `gizmo~` is that the pitch-shifting will not retain the tonality of a scale. For example, if the singer is singing in the key of C Major, and the ratio of pitch-shifting is 1.26 (a major third) for each note that is sung, when the singer sings a D, the harmony will be an F#, when it should be an F. Therefore, we had to find a method to detect the pitch in real-time, and change the ratio of `gizmo~` depending on which note is sung.
 
-> include image!!!
+![gizmo](./Images/gizmo.png)
 
 ### Pitch Detection: `retune~`
 Fortunately, Max/MSP has a `retune~` object, which performs a pitch detection and a pitch-shift; however, we only used `retune~` for pitch detection. The signal was sent to `retune~` after preprocessing to detect the pitch in frequency (via the second outlet of `retune~`). By setting the quality attribute to ‘best’, `retune~` performs the highest quality of pitch detection and retuning calculations.
