@@ -36,10 +36,12 @@ The following graphs show the unprocessed test signal, as well as the signal pro
 
 ![Comparison](./Images/DiferentMethods.jpg)
 
+After trying the two different methods, we decided that for the purposes of this particular project, using the zero crossing rate to pre-process the signal was sufficient.
+
 
 ### Comparing VST Plugin to Max External
-> describe thought process and choices
 
+Taking into account that the main processing of the harmonizer takes place in the Max/MSP environment, we had three options to implement the real time pre-processing of the signal:
 
 
 | Max/MSP Patcher/Abstraction      | Max External  | VST Plugin (Using MATLAB)   |
@@ -47,4 +49,64 @@ The following graphs show the unprocessed test signal, as well as the signal pro
 |Less flexibility for sample by sample processing| Sample by sample and frame by frame manipulation|Sample by sample and frame by frame manipulation|  
 |Fast prototyping and testing | Laborious to write, test and debug     | Faster prototyping, testing and debugging. audioTestBench included in MATLAB   |
 |No coding/compiling         | Max SDK needed          | MATLAB Audio System Toolbox includes generateAudioPlugin function              |
+
+We decided to make a VST plugin using MATLAB and the Audio System Toolbox. This made it easier to write and test the plugin. The ```generateAudioPlugin``` function in MATLAB creates a VST plugin with a very simple GUI that contains sliders to the parameters assigned in the code. These parameters can be defined and initialized inside the ```properties``` of the plugin:
+
+```
+properties        
+        Gain = 1.0;
+        zcrThresh = 0.25;
+        unvoicedGain = 0.1;
+    end
+```
+
+And can then be mapped to the GUI sliders inside the constant ```properties``` using the function ```audioPluginParameter``` inside the ```audioPluginInterface``` :
+
+```
+    properties (Constant)
+        
+        PluginInterface = audioPluginInterface(...
+            audioPluginParameter('Gain', 'DisplayName', 'Gain',...
+            'Mapping', {'lin',0.0,1.0}),...
+            audioPluginParameter('zcrThresh', 'DisplayName', 'Zero Crossing Threshold',...
+            'Mapping', {'lin',0.0,0.5}),...
+            audioPluginParameter('unvoicedGain', 'DisplayName', 'Unvoiced Gain',...
+            'Mapping', {'lin',0.0,1.0}))       
+    end
+ ```
+ 
+ 
+ The main processing of the plugin occurs in the following block of code. Here, the fade in and fade out are defined, the zero crossing rate of the current frame is calculated and the corresponding gain is applied to the frame. The zero crossing rate is then stored and used for comparison when the next frame is calculated.
+ 
+ ```function out = process(plugin, in)    
+            
+            sIn = size(in);
+            fadeOut = transpose( logspace( plugin.Gain, log10(plugin.unvoicedGain), length(in) ) );
+            fadeOut = repmat(fadeOut, sIn(2));
+            fadeIn = transpose( logspace( log10(plugin.unvoicedGain), plugin.Gain, length(in) ) );
+            fadeIn = repmat(fadeIn, 1, sIn(2));
+                        
+            zcr = 0.5* mean ( abs( diff( sign(in ))));
+            out1 = zeros(size(in));
+            
+            if zcr > plugin.zcrThresh
+                if plugin.zcrPrevious > plugin.zcrThresh
+                    out1 = in * plugin.unvoicedGain;
+                elseif plugin.zcrPrevious < plugin.zcrThresh
+                    out1 = in * fadeOut;
+                end
+                
+            elseif zcr < plugin.zcrThresh
+                if plugin.zcrPrevious < plugin.zcrThresh
+                    out1 = in * plugin.Gain;
+                elseif plugin.zcrPrevious > plugin.zcrThresh
+                	out1 = in * fadeIn;
+                end
+            end
+            out = out1 * plugin.Gain;            
+            plugin.zcrPrevious = zcr;             
+        end        
+```
+
+
 
