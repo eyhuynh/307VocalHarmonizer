@@ -31,5 +31,7 @@ The detected pitch gets converted into a MIDI note using the `ftom` object. The 
 
 ![ratioCalculation](./Images/ratiocalculation.png)
 
+![collupminor](./Images/collupM.png)
+
 
 [Next: Formant Analysis](./formantanalysis.md)
