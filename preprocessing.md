@@ -1,4 +1,4 @@
-[Previous](./interface.md)     
+[Previous: Interface](./interface.md)     
 
 ## Pre-processing
 
@@ -117,5 +117,5 @@ Finally, we can run the function ```audioTestBench``` with the name of our plugi
 
 
 
-[Next](./pitchshifting.md)
+[Next: Pitch-Shifting](./pitchshifting.md)
 
