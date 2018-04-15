@@ -1,4 +1,4 @@
-[previous](./preprocessing.md)
+[Previous: Pre-processing](./preprocessing.md)
 
 ## Pitch-shifting
 In order for harmonies to be heard, pitch-shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. Pitch-shifting was implemented on Max/MSP primarily with the `gizmo~` object, but also with the help of the `retune~` object. The goal of implementing the pitch-shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
@@ -30,4 +30,4 @@ The detected pitch gets converted into a MIDI note using the `ftom` object. The 
 > include image
 
 
-[Next](./effects.md)
+[Next: Effects](./effects.md)
