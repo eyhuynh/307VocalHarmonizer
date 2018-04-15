@@ -31,7 +31,7 @@ zcr = 0.5 * mean ( abs( diff( sign( input ))));
 
 The function ```diff ``` returns the value of ```sign(input(n)) - sign(input(n-1))``` for n = 2 to n = N. We can test different thresholds and determine a value that works for our purposes. If the zero crossing rate of the signal exceeds the threshold, we assume that the current sound is voiceless, and should not be transposed. The following graph shows the zero crossing rate of the test file:
 
-![ZeroCrossing of Signal](307VocalHarmonizer/Images/ZCR.jpg)
+![ZeroCrossingRate](./Images/ZCR.jpg)
 
 
 #### Short Time Energy
