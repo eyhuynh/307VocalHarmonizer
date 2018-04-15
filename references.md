@@ -1,4 +1,4 @@
-[previous](./limitations.md)
+[Previous: Limitations and Outlook](./limitations.md)
 
 ## References
 
