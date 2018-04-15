@@ -1,4 +1,4 @@
-[previous](./effects.md)
+[Previous: Effects](./effects.md)
 
 ## Limitations and Outlook
 > what we would have done differently
@@ -8,4 +8,4 @@
 > is it usable to the public?
 
 
-[next](./references.md)
+[Next: References](./references.md)
