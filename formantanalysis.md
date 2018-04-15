@@ -1,4 +1,4 @@
-[previous](./pitchshifting.md)
+[Previous: Pitch-Shifting](./pitchshifting.md)
 
 
 ## Formant Analysis
@@ -8,5 +8,5 @@
 
 
 
-[next](./effects.md)
+[Next: Effects](./effects.md)
 
