@@ -62,7 +62,7 @@ The following graph shows the short term energy of the test file:
 
 
 ## Pitch-shifting
-In order for harmonies to be heard, pitch-shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. Pitch-shifting was implemented on Max/MSP primarily with the gizmo~ object, but also with the help of the retune~ object. The goal of implementing the pitch-shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
+In order for harmonies to be heard, pitch-shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. Pitch-shifting was implemented on Max/MSP primarily with the `gizmo~` object, but also with the help of the `retune~` object. The goal of implementing the pitch-shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
 
 ### gizmo~: Pitch-Shift
 The gizmo~ object on Max/MSP was mainly used for the pitch-shifting. We decided to pitch-shift one of harmony up a third, and pitch shift the other harmony down a third.
