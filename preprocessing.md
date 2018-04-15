@@ -34,7 +34,7 @@ For each frame in the signal, we can compute the STE and ZCR to decide if the ga
 In order to make the transitions smoother, we can define a fade in and fade out. We can compare the current frames' STE and ZCR and compare them to the previous frame to determine the gain needed: 1.0 (no change), fade in, fade out or the lower, user defined gain.
 The following graphs show the unprocessed test signal, as well as the signal processed using the ZCR with a threshold of 0.25 and the signal processed using the STE with a threshold of 140. The lower gain is set at 0.1.
 
-![Comparison](./Images/Diferent methods.jpg)
+![Comparison](./Images/DiferentMethods.jpg)
 
 
 ### Comparing VST Plugin to Max External
