@@ -78,7 +78,7 @@ One issue with applying a constant ratio to gizmo~ is that the pitch-shifting wi
 > include image!!!
 
 ### retune~: Pitch Detection
-Fortunately, Max/MSP has a retune~ object, which performs a pitch detection and a pitch-shift; however, we only used retune~ for pitch detection. The signal was sent to retune~ after preprocessing to detect the pitch in frequency (via the second outlet of retune~).
+Fortunately, Max/MSP has a retune~ object, which performs a pitch detection and a pitch-shift; however, we only used retune~ for pitch detection. The signal was sent to retune~ after preprocessing to detect the pitch in frequency (via the second outlet of retune~). By setting the quality attribute to ‘best’, retune~ performs the highest quality of pitch detection and retuning calculations.
  
 > include image!!!
 
