@@ -78,13 +78,11 @@ One issue with applying a constant ratio to gizmo~ is that the pitch-shifting wi
 > include image!!!
 
 ### retune~: Pitch Detection
-> how it works, benefits, cons
-> 
-> how it enhances
-> 
-> explain how pitch shift calculations are made... user friendly
-> 
-> include images
+Fortunately, Max/MSP has a retune~ object, which performs a pitch detection and a pitch-shift; however, we only used retune~ for pitch detection. The signal was sent to retune~ after preprocessing to detect the pitch in frequency (via the second outlet of retune~).
+ 
+> include image!!!
+
+### Calculating Ratios
 
 ## Formant Analyses
 > god bless us
