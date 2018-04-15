@@ -62,14 +62,14 @@ The following graph shows the short term energy of the test file:
 
 
 ## Pitch-shifting
-In order for harmonies to be heard, pitch shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. The pitch-shifting was implemented on Max/MSP primarily with the gizmo~ object, but also with the retune~ object. The goal of implementing the pitch shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
+In order for harmonies to be heard, pitch-shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. Pitch-shifting was implemented on Max/MSP primarily with the gizmo~ object, but also with the help of the retune~ object. The goal of implementing the pitch-shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
 
-### gizmo~: Pitch Shift
-The gizmo~ object on Max/MSP was mainly used for the pitch-shifting. We decided to pitch shift one of the harmonies up a third, and pitch shift the other harmony down a third.
+### gizmo~: Pitch-Shift
+The gizmo~ object on Max/MSP was mainly used for the pitch-shifting. We decided to pitch-shift one of harmony up a third, and pitch shift the other harmony down a third.
 
-gimzo~ works inside a pfft~ object. The pfft~ object is a subpatch that computes a Fast Fourier Transform for each frame of a specified length in samples (i.e., it performs a Short-time Fourier Transform or ‘STFT’). We used the same pfft~ object as the one from the ‘gizmo~ Help’ option. After the signal has been pre-processed, it gets sent to pfft~. Inside the pfft~, gizmo~ works in between the fftin~ and fftout~ objects, so that an STFT can be computed. gizmo~ also takes in an argument that is a ratio between two frequencies. This ratio determines how shifted the pitch(es) of a signal will be. For example, to have a pitch-shift of a major third, the ratio would be approximately 1.26.
+gimzo~ works inside a pfft~ object. The pfft~ object is a subpatch that computes a Fast Fourier Transform for each frame of a specified length in samples (i.e., it performs a Short-time Fourier Transform or ‘STFT’). We used the same pfft~ object as the one from the ‘gizmo~ Help’ option. After the signal has been pre-processed, it gets sent to pfft~. Inside the pfft~, gizmo~ works in between the fftin~ and fftout~ objects, so that an STFT can be computed. gizmo~ also takes in an argument that is a ratio between two frequencies. This ratio determines how shifted the pitch of a signal will be. For example, to achieve a pitch-shift of a major third, the ratio would be approximately 1.26.
 
-One issue with applying a constant ratio to gizmo~ is that the pitch-shifting will not retain the tonality of a scale. For example, if the singer is singing in the key of C Major, and the ratio of pitch-shifting is 1.26 (for a major third) for each note that is sung, when the singer sings a D, the harmony will be an F#, when it should be an F. Therefore, we had to find a method to detect the pitch in real-time, change the ratio of gizmo~ depending on which note is sung.
+One issue with applying a constant ratio to gizmo~ is that the pitch-shifting will not retain the tonality of a scale. For example, if the singer is singing in the key of C Major, and the ratio of pitch-shifting is 1.26 (a major third) for each note that is sung, when the singer sings a D, the harmony will be an F#, when it should be an F. Therefore, we had to find a method to detect the pitch in real-time, and change the ratio of gizmo~ depending on which note is sung.
 
 > include image!!!
 
