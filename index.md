@@ -34,7 +34,18 @@ The function ```diff ``` returns the value of ```sign(input(n)) - sign(input(n-1
 ![ZeroCrossingRate](./Images/ZCR.jpg)
 
 
-#### Short Time Energy
+#### Short Term Energy
+
+The short term energy of a signal is defined as sum of the square of the value of the samples. An average is taken to avoid dependency on the frame length. A similar result can be achieved by getting the sum of the absolute value of the samples. In general, the short term energy for voiced sounds should be rather stable. If we compare the short term energy of a frame with the previous one and find a significant difference, this may indicate that the signal contains a voiceless sound. In MATLAB we can implement such formula in the following fashion, for n = 1 to n = N:
+
+```c++
+ste = mean( sum(abs( ( y(n) ))))
+```
+The following graph shows the short term energy of the test file:
+
+![ShortTermEnergy](./Images/ShortTermEnergy.jpg)
+
+### Comparing STE and ZCR
 
 
 
@@ -55,7 +66,11 @@ The function ```diff ``` returns the value of ```sign(input(n)) - sign(input(n-1
 
 
 ## Pitch-shifting
-In order for harmonies to be heard, pitch shifting must take place. Our goal was to create two harmonies: one at a higher pitch compared to the signer’s voice, and the other at a lower pitch compared to the singer’s voice. The pitch-shifting was implemented on Max/MSP primarily with the gizmo~ object, but also with the retune~ object. The goal of implementing the pitch shift, was to be as user-friendly as possible. We wanted any individual to be able to use this vocal harmonizer without requiring any music theory background.
+> on Max/MSP
+> 
+> decided to have one upper and lower harmony and explain why
+> 
+> wanted it to be user friendly, so that anyone can use it without requiring music theory background
 
 ### gizmo~: Pitch Shift
 > how it works, benefits, cons
