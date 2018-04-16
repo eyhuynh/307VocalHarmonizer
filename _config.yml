@@ -1,16 +1,5 @@
 title: Vocal Harmonizer
-description: <a href="https://eyhuynh.github.io/307VocalHarmonizer/introduction.html">Introduction</a>
-
-
-
--  [Introduction](./introduction.md)
--  [The Interface](./interface.md)
--  [Pre-processing](./preprocessing.md)
--  [Pitch-Shifting](./pitchshifting.md)
--  [Formant Analysis](./formantanalysis.md)
--  [Effects](./effects.md)
--  [Limitations and Outlook](./limitations)
--  [References](./references.md)
+description: Vocal Harmonizer created using Max as final project for MUMT 307 Music and Audio Computing 2, Winter 2018
 
 theme: jekyll-theme-dinky
 
