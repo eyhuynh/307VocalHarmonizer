@@ -1,7 +1,4 @@
-[Home](./index.md)
-
-
-[Previous: Introduction](./introduction.md)
+[Previous: Home](./index.md)
 
 
 ## The Interface
