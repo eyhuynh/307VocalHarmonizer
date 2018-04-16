@@ -17,6 +17,7 @@ Our main goals were to find a way to implement a vocal harmonizer in real-time. 
 1.  [Formant Analysis](./formantanalysis.md)
 1.  [Effects](./effects.md)
 1.  [Limitations and Outlook](./limitations)
+1.  [Demo](./demo.md)
 1.  [References](./references.md)
 
 
