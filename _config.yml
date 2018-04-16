@@ -3,14 +3,14 @@ description: Vocal Harmonizer created using Max as final project for MUMT 307 Mu
 
 ## Index 
 
-1.  [Introduction](./introduction.md)
-1.  [The Interface](./interface.md)
-1.  [Pre-processing](./preprocessing.md)
-1.  [Pitch-Shifting](./pitchshifting.md)
-1.  [Formant Analysis](./formantanalysis.md)
-1.  [Effects](./effects.md)
-1.  [Limitations and Outlook](./limitations)
-1.  [References](./references.md)
+-  [Introduction](./introduction.md)
+-  [The Interface](./interface.md)
+-  [Pre-processing](./preprocessing.md)
+-  [Pitch-Shifting](./pitchshifting.md)
+-  [Formant Analysis](./formantanalysis.md)
+-  [Effects](./effects.md)
+-  [Limitations and Outlook](./limitations)
+-  [References](./references.md)
 
 theme: jekyll-theme-dinky
 
