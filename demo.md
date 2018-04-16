@@ -1,7 +1,7 @@
 [Home](./index.md)
 
 
-[Previous](./limitations)
+[Previous: Limitations and Outlook](./limitations)
 
 ## Demo
 
@@ -10,4 +10,4 @@
 
 
 
-[Next](./references.md)
+[Next: References](./references.md)
