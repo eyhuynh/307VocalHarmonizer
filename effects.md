@@ -14,4 +14,4 @@ We used the `tapin~` and `tapout~` objects to create delay lines. The subpatch f
 ![delaySubpatch](./Images/delay.png)
 
 
-[Next: Limitations and Outlook](./limitations.md)
+[Next: Demo](./demo.md)
