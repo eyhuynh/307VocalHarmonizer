@@ -11,7 +11,6 @@ Our main goals were to find a way to implement a vocal harmonizer in real-time. 
 
 ## Index 
 
-1.  [Introduction](./introduction.md)
 1.  [The Interface](./interface.md)
 1.  [Pre-processing](./preprocessing.md)
 1.  [Pitch-Shifting](./pitchshifting.md)
