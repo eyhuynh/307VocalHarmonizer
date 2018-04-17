@@ -4,7 +4,7 @@
 [Previous: Pitch-Shifting](./pitchshifting.md)
 
 
-## Formant Analysis
+## Spectral Analysis
 > god bless us
 > 
 > #Pray4Huynez2k18
