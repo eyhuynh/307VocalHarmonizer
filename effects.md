@@ -1,7 +1,7 @@
 [Home](./index.md)
 
 
-[Previous: Formant Analysis](./formantanalysis.md)
+[Previous: Cross-Synthesis](./spectralanalysis.md)
 
 ## Effects
 We wanted to implement digital delay lines to add effects to either the singer’s voice, the upper harmony, the lower harmony, or any combination of the voices. Our goal was to provide user control of the delay volume, time, and feedback (i.e., echo).
