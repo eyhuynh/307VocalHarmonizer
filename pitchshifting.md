@@ -34,4 +34,4 @@ The detected pitch gets converted into a MIDI note using the `ftom` object. The 
 ![collupminor](./Images/collupM.png)
 
 
-[Next: Spectral Analysis](./spectralanalysis.md)
+[Next: Cross-Synthesis](./spectralanalysis.md)
